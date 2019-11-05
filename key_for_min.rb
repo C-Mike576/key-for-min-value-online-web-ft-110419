@@ -9,7 +9,7 @@ def key_for_min_value(name_hash)
     if number < value
       value = number
     end
-    
+    binding.pry
   end
   binding.pry
 end
