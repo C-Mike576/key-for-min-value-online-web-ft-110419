@@ -10,7 +10,7 @@ def key_for_min_value(name_hash)
       value = number
     end
   end
-  binding.pry
+  #binding.pry
   name_hash.each do |name, number|
     if number == value
       return name
