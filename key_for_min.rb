@@ -3,8 +3,13 @@
 require 'pry'
 
 def key_for_min_value(name_hash)
-  name_hash.collect do |name, number|
-    binding.pry
-    name
+  value = 0
+  name_hash.collect_with_index do |name, number|
+    
+    value = number
+    if number < value
+      value = number
+    end
   end
+  binding.pry
 end
