@@ -3,9 +3,8 @@
 require 'pry'
 
 def key_for_min_value(name_hash)
-  value = 0
+  value = 1000
   name_hash.collect do |name, number|
-    value = number
     if number < value
       value = number
     end
