@@ -7,6 +7,7 @@ def key_for_min_value(name_hash)
   name_hash.collect_with_index do |name, number|
     value = number
     if number < value
+      binding.pry
       value = number
     end
     binding.pry
