@@ -4,14 +4,14 @@ require 'pry'
 
 def key_for_min_value(name_hash)
   value = 0
-  name_hash.collect_with_index do |name, number|
+  name_hash.collect do |name, number|
     value = number
-    binding.pry
+    
     if number < value
-      binding.pry
+      
       value = number
     end
-    binding.pry
+    
   end
   binding.pry
 end
